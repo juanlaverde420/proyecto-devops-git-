@@ -1,0 +1,15 @@
+name: CI Basica
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Mi primer workflow de GitHub Actions funciona correctamente"
